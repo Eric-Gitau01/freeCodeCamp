@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Camp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="/submit" method="post" id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">
+                Name:
+                <input type="text" id="name" name="name" placeholder="enter your name" required>
+            </label>
+            <label id="email-label" for="email">
+                Email:
+                <input type="email" id="email" name="email" placeholder="enter you email" required>
+            </label>
+            <label id="number-label" for="number">
+                Age:
+                <input type="number" id="number" name="age" min="18" max="122" placeholder="enter you age" required>
+            </label>
+            <label for="dropdown">
+                Which option best describes your current role?
+                <select id="dropdown" name="role" required>
+                    <option value="">Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="engineer">Engineer</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            How did you hear about freeCodeCamp?
+            <label for="searchEngine">
+            <input type="radio" id="searchEngine" name="referrer" value="searchEngine" class="inline">
+            Search Engine</label>
+            <label for="friend">
+            <input type="radio" id="friend" name="referrer" value="friend" class="inline">
+            Friend</label>
+            <label for="googleAd">
+            <input type="radio" id="googleAd" name="referrer" class="inline" value="googleAd">
+            Google Ad</label>
+            <label for="other">
+            <input type="radio" id="other" name="referrer" class="inline" value="other">
+            Other</label>
+        </fieldset>
+        <fieldset>
+            What would you like to see improved? (Check all that apply)
+            
+            <label for="codingChallenge">
+            <input type="checkbox" id="codingChallenge" name="clue" value="codingChallenge" class="inline">
+            Coding Challenge</label>
+            <label for="forum">
+            <input type="checkbox" id="forum" name="clue" value="forum" class="inline">
+            Forum</label>
+            <label for="forum">
+            <input type="checkbox" id="learnMore" name="clue" value="learnMore" class="inline">
+           Learn More</label>
+        </fieldset>
+        <fieldset>
+            <label for="comment">
+                Any comments or suggestions?
+                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
