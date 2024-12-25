@@ -12,7 +12,9 @@
     height: 600px;
     background-color: brown;
     margin: 0px auto;
+    filter: blur(3px);
 }
+
 
 .one {
     width: 400px;
@@ -20,6 +22,9 @@
     background-color: burlywood;
     overflow: hidden;
     margin: 20px auto;
+    transform: rotate(-0.6deg);
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px burlywood;
 }
 
 .two {
@@ -27,6 +32,10 @@
     height: 180px;
     background-color: red;
     margin: 0 auto;
+    transform: rotate(0.4);
+    border-radius: 10px 15px;
+    box-shadow: 0 0 5px 5px red;
+    
 }
 
 .three {
@@ -34,4 +43,7 @@
     height: 150px;
     background-color: rgb(65, 1, 1);
     margin: 20px auto 0;
+    transform: rotate(-0.9deg);
+    border-radius: 15px 10px 20px 15px;
+    box-shadow: 0 0 5px 5px rgb(65, 1, 1);
 }
