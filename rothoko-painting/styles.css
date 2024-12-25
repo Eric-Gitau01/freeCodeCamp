@@ -1,0 +1,37 @@
+.container {
+    width: 550px;
+    height: 650px;
+    border: 40px solid rgb(0, 0, 0);
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.inner-container {
+    width: 500px;
+    height: 600px;
+    background-color: brown;
+    margin: 0px auto;
+}
+
+.one {
+    width: 400px;
+    height: 190px;
+    background-color: burlywood;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.two {
+    width: 90%;
+    height: 180px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.three {
+    width: 90%;
+    height: 150px;
+    background-color: rgb(65, 1, 1);
+    margin: 20px auto 0;
+}
