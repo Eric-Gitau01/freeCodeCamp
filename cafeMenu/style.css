@@ -1,77 +1,95 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: burlywood;
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
     padding: 20px;
-}
-
-.established {
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  .established {
     font-style: italic;
-    font-size: 1.2em;
+  }
+  
+  h1, h2, p {
     text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-
-}
-
-.main {
-   background-color: burlywood;
-   width: 80%;
-   height: auto;
-   margin: 20px auto;
-   max-width: 500px;
-}
-
-h1, h2{
-    text-align: center;
-    padding-top: 20px;
-    font-weight: bold;
-}
-
-.item p{
-    display: inline-block;
-    padding: 10px;
-}
-
-.flavor, .dessert{
-    width: 75%;
-    text-align: left;
-}
-
-.price {
-    width: 25%;
-    text-align: right;
-}
-
-hr {
-    background-color: brown;
-    height: 5px;
-    border-color: brown;
-}
-
-footer {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  }
+  
+  .menu {
+    width: 80%;
     background-color: burlywood;
-    color: #00000;
-    font-size: 0.9em;
-}
-
-a {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+  }
+  
+  .bottom-line {
+    margin-top: 25px;
+  }
+  
+  h1, h2 {
+    font-family: Impact, serif;
+  }
+  
+  .item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .flavor, .dessert {
+    text-align: left;
+    width: 75%;
+  }
+  
+  .price {
+    text-align: right;
+    width: 25%;
+  }
+  
+  /* FOOTER */
+  
+  footer {
+    font-size: 14px;
+  }
+  
+  .address {
+    margin-bottom: 5px;
+  }
+  
+  a {
     color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: whitesmoke;
-}
-
-
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: brown;
+  }
+  
+  a:active {
+    color: brown;
+  }
