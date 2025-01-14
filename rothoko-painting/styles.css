@@ -1,49 +1,48 @@
-.container {
-    width: 550px;
-    height: 650px;
-    border: 40px solid rgb(0, 0, 0);
-    margin: 20px auto;
-    display: flex;
-    align-items: center;
+.canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+  overflow: hidden;
+  filter: blur(2px);
 }
 
-.inner-container {
-    width: 500px;
-    height: 600px;
-    background-color: brown;
-    margin: 0px auto;
-    filter: blur(3px);
+.frame {
+  border: 50px solid black;
+  width: 500px;
+  padding: 50px;
+  margin: 20px auto;
 }
-
 
 .one {
-    width: 400px;
-    height: 190px;
-    background-color: burlywood;
-    overflow: hidden;
-    margin: 20px auto;
-    transform: rotate(-0.6deg);
-    border-radius: 20px;
-    box-shadow: 0 0 5px 5px burlywood;
+  width: 425px;
+  height: 150px;
+  background-color: #efb762;
+  margin: 20px auto;
+  box-shadow: 0 0 3px 3px #efb762;
+  border-radius: 9px;
+  transform: rotate(-0.6deg);
 }
 
 .two {
-    width: 90%;
-    height: 180px;
-    background-color: red;
-    margin: 0 auto;
-    transform: rotate(0.4);
-    border-radius: 10px 15px;
-    box-shadow: 0 0 5px 5px red;
-    
+  width: 475px;
+  height: 200px;
+  background-color: #8f0401;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 3px 3px #8f0401;
+  border-radius: 8px 10px;
+  transform: rotate(0.4deg);
+}
+
+.one, .two {
+  filter: blur(1px);
 }
 
 .three {
-    width: 90%;
-    height: 150px;
-    background-color: rgb(65, 1, 1);
-    margin: 20px auto 0;
-    transform: rotate(-0.9deg);
-    border-radius: 15px 10px 20px 15px;
-    box-shadow: 0 0 5px 5px rgb(65, 1, 1);
+  width: 91%;
+  height: 28%;
+  background-color: #b20403;
+  margin: auto;
+  filter: blur(2px);
+  box-shadow: 0 0 5px 5px #b20403;
+  border-radius: 30px 25px 60px 12px;
 }
