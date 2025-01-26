@@ -1,0 +1,50 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    color: #000;
+    margin: 30px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #a8a8a8;
+    color: #000000;
+}
+
+h1 {
+    text-decoration: underline;
+}
+figure {
+    width: 500px;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 12px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    margin: 10px auto;
+}
+
+section {
+    border-bottom: 4px solid gray;
+}
+
+footer {
+   text-align: center;
+}
