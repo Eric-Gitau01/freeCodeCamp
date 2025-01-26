@@ -1,75 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1 id="title">Camp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form action="/submit" method="post" id="survey-form">
-        <fieldset>
-            <label id="name-label" for="name">
-                Name:
-                <input type="text" id="name" name="name" placeholder="enter your name" required>
-            </label>
-            <label id="email-label" for="email">
-                Email:
-                <input type="email" id="email" name="email" placeholder="enter you email" required>
-            </label>
-            <label id="number-label" for="number">
-                Age:
-                <input type="number" id="number" name="age" min="18" max="122" placeholder="enter you age" required>
-            </label>
-            <label for="dropdown">
-                Which option best describes your current role?
-                <select id="dropdown" name="role" required>
-                    <option value="">Select an option</option>
-                    <option value="student">Student</option>
-                    <option value="teacher">Teacher</option>
-                    <option value="engineer">Engineer</option>
-                    <option value="other">Other</option>
-                </select>
-            </label>
-        </fieldset>
-        
-        <fieldset>
-            How did you hear about freeCodeCamp?
-            <label for="searchEngine">
-            <input type="radio" id="searchEngine" name="referrer" value="searchEngine" class="inline">
-            Search Engine</label>
-            <label for="friend">
-            <input type="radio" id="friend" name="referrer" value="friend" class="inline">
-            Friend</label>
-            <label for="googleAd">
-            <input type="radio" id="googleAd" name="referrer" class="inline" value="googleAd">
-            Google Ad</label>
-            <label for="other">
-            <input type="radio" id="other" name="referrer" class="inline" value="other">
-            Other</label>
-        </fieldset>
-        <fieldset>
-            What would you like to see improved? (Check all that apply)
-            
-            <label for="codingChallenge">
-            <input type="checkbox" id="codingChallenge" name="clue" value="codingChallenge" class="inline">
-            Coding Challenge</label>
-            <label for="forum">
-            <input type="checkbox" id="forum" name="clue" value="forum" class="inline">
-            Forum</label>
-            <label for="forum">
-            <input type="checkbox" id="learnMore" name="clue" value="learnMore" class="inline">
-           Learn More</label>
-        </fieldset>
-        <fieldset>
-            <label for="comment">
-                Any comments or suggestions?
-                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="enter your comment here..."></textarea>
-            </label>
-        </fieldset>
-        <input type="submit" value="Submit">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input type="submit" value="Submit" />
     </form>
-</body>
+  </body>
 </html>

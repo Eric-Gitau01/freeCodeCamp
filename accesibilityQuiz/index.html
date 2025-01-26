@@ -4,83 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AccesibityQuiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stles.css">
 </head>
 <body>
     <header>
-        <img src="" alt="logo">
+        <img id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
         <h1>HTML/CSS Quiz</h1>
-        <ul>
-            <li><a href="#info">INFO</a></li>
-            <li><a href="#html-questions">HTML</a></li>
-            <li><a href="#css-questions">CSS</a></li>
-        </ul>
+        <nav aria-label="navigation menu">
+            <ul>
+                <li><a href="#info">INFO</a></li>
+                <li><a href="#html-questions">HTML</a></li>
+                <li><a href="#css-questions">CSS</a></li>
+            </ul>
+        </nav>
+        
     </header>
     <main>
         <form action="#" method="post">
-            <section id="info">
-                <h2>Student Info</h2>
-                <label for="name">
-                    Name:
-                    <input type="text" id="name" name="name" required>
-                </label>
-                <label for="email">
-                    Email:
-                    <input type="email" id="email" name="email" required>
-                </label>
-                <label for="date-of-birth">
-                    Date of Birth:
-                    <input type="date" id="date-of-birth" name="date-of-birth" required>
-                </label>
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label for="name">
+                        Name:
+                        <input type="text" id="name" name="name" required>
+                    </label>
+                </div>
+                <div class="info">
+                    <label for="email">
+                        Email:
+                        <input type="email" id="email" name="email" required>
+                    </label>
+                </div>
+                <div class="info">
+                    <label for="date-of-birth">
+                        Date of Birth:
+                        <input type="date" id="date-of-birth" name="date-of-birth" required>
+                    </label>
+                </div>
             </section>
-            <section id="html-questions">
-                <h2>HTML</h2>
-                <h3>1</h3>
-                <fieldset>
-                    <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
-                    <label for="true">
-                        <input type="radio" id="true" name="q1" value="true" required>True
-                    </label>
-                    <label for="false">
-                        <input type="radio" id="false" name="q1" value="false" required>False
-                    </label>
-                </fieldset>
-                <h3>2</h3>
-                <fieldset>
-                    <legend>Which of the following elements is used to define a hyperlink in HTML?</legend>
-                    <label for="a">
-                        <input type="radio" id="a" name="q2" value="a" required>A &lt;a&gt; element
-                    </label>
-                    <label for="img">
-                        <input type="radio" id="img" name="q2" value="img" required>A &lt;img&gt; element
-                    </label>
-                    <label for="div">
-                        <input type="radio" id="div" name="q2" value="div" required>A &lt;div&gt; element
-                    </label>
-                </fieldset>
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML</h2>
+                <div class="question-block">
+                    <h3> <span class="sr-only">question</span> 1</h3>
+                    <fieldset  class="question" name="html-question-one">
+                        <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+                        <ul class="answers-list">
+                            <li>
+                              <label for="q1-a1">
+                                <input type="radio" id="q1-a1" name="q1" value="true" />
+                                True
+                              </label>
+                            </li>
+                            <li>
+                              <label for="q1-a2">
+                                <input type="radio" id="q1-a2" name="q1" value="false" />
+                                False
+                              </label>
+                            </li>
+                          </ul>
+                    </fieldset>
+                    <h3> <span class="sr-only">question</span>2</h3>
+                    <fieldset  class="question" name="html-question-two">
+                        <h3><span class="sr-only">Question</span>2</h3>
+                        <fieldset class="question" name="html-question-two">
+                        <legend>
+                            A label element nesting an input element is required to have a
+                            for attribute with the same value as the input's id
+                        </legend>
+                        <ul class="answers-list">
+                            <li>
+                            <label for="q2-a1">
+                                <input type="radio" id="q2-a1" name="q2" value="true" />
+                                True
+                            </label>
+                            </li>
+                            <li>
+                            <label for="q2-a2">
+                                <input type="radio" id="q2-a2" name="q2" value="false" />
+                                False
+                            </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
             </section>
-            <section id="css-questions">
-                <h2>CSS</h2>
-                <fieldset>
-                    <legend>Can the CSS margin property accept negative values?</legend>
-                    <select>
-                        <option value="">Select one</option>
-                        <option value="true">Yes</option>
-                        <option value="false">No</option>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS</h2>
+                <div class="formrow">
+                  <div class="question-block">
+                    <label for="selector">Can the CSS margin property accept negative values?</label>
+                  </div>
+                  <div class="answer">
+                    <select name="selector" id="selector" required>
+                      <option value="">Select an option</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
                     </select>
-                </fieldset>
-                <fieldset>
-                    <label for="comment">Do you have any questions:</label>
-                    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
-                </fieldset>
-            </section>
-            <input type="submit" value="Submit">
+                  </div>
+                  <div class="question-block">
+                    <label for="css-textarea">Do you have any questions:</label>
+                  </div>
+                  <div class="answer">
+                    <textarea id="css-textarea" name="css-questions" rows="5" cols="24"></textarea>
+                  </div>
+                </div>
+              </section>
+              <button type="submit">Send</button>
         </form>
         
     </main>
     <footer>
         <address>
-            freeCodeCamp<br>
+            <a href="#">freeCodeCamp</a><br>
             San Francisco<br>
             California<br>
             USA<br>
