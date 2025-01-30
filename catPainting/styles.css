@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-top: 100px;
+}
+.cathead {
+    width: 205px;
+    height: 180px;
+    border: 1px solid #000;
+    border-radius: 46%;
+    background-image: linear-gradient(#5e5e5e 85%, #45454f 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.ear-right {
+   border-right: 70px solid #5e5e5e ;
+   border-bottom: 35px solid transparent;
+   border-top: 35px solid transparent;
+   transform: rotate(15deg);
+   position: absolute;
+   top: -16px;
+   left: 143px;
+   border-radius: 10px
+}
+
+.ear-left {
+    border-left: 70px solid #5e5e5e ;
+    border-bottom: 35px solid transparent;
+    border-top: 35px solid transparent;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: -16px;
+    left: -11px;
+    border-radius: 10px
+}
+
+.inner-left-ear {
+    border-left: 40px solid rgb(31, 31, 83);
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    position: absolute;
+    top: -20px;
+    left: -60px;
+    top: -16px;
+    border-radius: 10px
+}
+
+
+.inner-right-ear {
+    border-right: 40px solid rgb(31, 31, 83);
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    border-radius: 10px
+}
+
+.left-eye {
+    width: 40px;
+    height: 55px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 40px;
+    transform: rotate(20deg);
+}
+
+.right-eye {
+    width: 40px;
+    height: 55px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 120px;
+    transform: rotate(-20deg);
+}
+
+.left-pupil {
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+
+.right-pupil {
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.cat-nose {
+    border-right: 30px solid rgb(88, 21, 21);
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 325px;
+    left: 325px;
+    transform: rotate(-90deg);
+}
+
+.cat-mouth div{
+    width: 30px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 190%/190px 150px 0 0;
+    border-color: black transparent transparent transparent;
+}
+
+.left-part-mouth {
+    position: absolute;
+    top: 90px;
+    left: 74px;
+    transform: rotate(170deg);
+}
+
+.right-part-mouth {
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    transform: rotate(170deg);
+    transform: scaleY(-1);
+}
+
+.cat-whiskers {
+    position: absolute;
+    top: 240px;
+    left: 235px;
+}
+
+.cat-whiskers-left div {
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+  }
+  
+  .cat-whiskers-right div {
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+  }
+  
+  .cat-whisker-left-top {
+    position: absolute;
+    top: 120px;
+    left: 52px;
+    transform: rotate(10deg);
+  }
+  
+  .cat-whisker-left-middle {
+    position: absolute;
+    top: 127px;
+    left: 52px;
+    transform: rotate(3deg);
+  }
+  
+  .cat-whisker-left-bottom {
+    position: absolute;
+    top: 134px;
+    left: 52px;
+    transform: rotate(-3deg);
+  }
+  
+  .cat-whisker-right-top {
+    position: absolute;
+    top: 120px;
+    left: 109px;
+    transform: rotate(-10deg);
+  }
+  
+  .cat-whisker-right-middle {
+    position: absolute;
+    top: 127px;
+    left: 109px;
+    transform: rotate(-3deg);
+  }
+  
+  .cat-whisker-right-bottom {
+    position: absolute;
+    top: 134px;
+    left: 109px;
+  }
