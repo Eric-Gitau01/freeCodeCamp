@@ -8,7 +8,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 20px auto;
     border: 2px solid gray;
-    width: 700px;
+    max-width: 40rem;
 }
 
 h1 {
@@ -50,9 +50,7 @@ table {
     border: 0;
     width: 100%;
 }
-.tablerow {
-    padding: 10px;
-}
+
 
 table caption {
     color: blue;
@@ -63,8 +61,67 @@ table caption {
 
 }
 
-table > tr {
-    display: block;
+.nav-bar span {
+    margin-left: 10px;
+}
+
+tr.data {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+    padding: 10px;
+}
+th.current {
+    font-style: oblique;
+}
+
+tr.total {
+    border-bottom: 2px double black;
 }
 
 
+.total th {
+    font-size: 1.1rem;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 6px;
+}
+#total {
+    border-bottom: none;
+}
+#total th {
+    text-align: right;
+    width: 2px;
+}
+.total:hover {
+    cursor: pointer;
+    background-color: rgb(107, 248, 107);
+    
+}
+
+tr > td {
+    font-weight: bold;
+}
+
+tr .description {
+    display: block;
+    font-weight: normal;
+    margin-top: 1px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.data th {
+    vertical-align: top;
+    padding-top: 6px;
+    padding-right: 2px;
+}
+
+/* table {
+   
+} */
+
+tr td:not(.description) {
+   padding-top: 6px;
+   padding-left: 6px;
+    
+}
