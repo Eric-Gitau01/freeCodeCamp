@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB; /* Sky blue background */
+    overflow: hidden;
+}
+
+.garden {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.flower {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    animation: sway 3s infinite ease-in-out;
+}
+
+.petals {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #FF69B4; /* Pink petals */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+}
+
+.center {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #FFD700; /* Yellow center */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.stem {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 140px;
+    background-color: #008000; /* Green stem */
+}
+
+/* Animation for swaying flowers */
+@keyframes sway {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
