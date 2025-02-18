@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version Control System Knowledge Base</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="nabar">
+        <h1>Version Control System Knowledge Base</h1>
+        <ul>
+            <li><a href="#what-is-version-control">What is Version Control?</a></li>
+            <li><a href="#installing-configuring-git">Installing and Configuring Git</a></li>
+            <li><a href="#basic-git-commands">Basic Git Commands</a></li>
+            <li><a href="#git-branches">Git Branches</a></li>
+            <li><a href="#resolving-conflicts">Resolving Conflicts</a></li>
+            <li><a href="#hosting-repository">Hosting a Repository</a></li>
+            <li><a href="#git-tips-and-tricks">Git Tips and Tricks</a></li>
+        </ul>
+    </nav>
+    
+    <main id="main-doc">
+        <h2 id="what-is-version-control">What is Version Control?</h2>
+        <p>Version control is a system that allows developers to manage changes to files over time. It tracks every modification made to the codebase, enabling users to revert to previous versions if necessary. Version control systems are essential for collaborative projects and maintaining a clean and organized codebase.</p>
+        <p>Some popular version control systems include:</p>
+        <ul>
+            <li>Git</li>
+            <li>Mercurial</li>
+            <li>SVN</li>
+        </ul>
+
+        <!-- Installing and Configuring Git -->
+        <h2 id="installing-configuring-git">Installing and Configuring Git</h2>
+        <p>To get started with Git, you first need to install it on your local machine. Most operating systems provide straightforward installation processes through package managers or official downloads available on the <a href="https://git-scm.com/">Git website</a>.</p>
+        <p>Once installed, configure Git to ensure your commits are properly attributed to you. Use the following commands:</p>
+        <pre><code>
+             git config --global user.name "Your Name"
+              git config --global user.email "your-email@example.com"
+        </code></pre>
+        <p>Additionally, consider customizing settings such as line endings (core.autocrlf) and default editor preferences to streamline your workflow.</p>
+
+        <!-- Basic Git Commands -->
+        <h2 id="basic-git-commands">Basic Git Commands</h2>
+        <p>Here are some common Git commands you'll find useful:</p>
+        <ul>
+            <li><code>git init</code>: Initializes a new Git repository in the current directory.</li>
+            <li><code>git add file-name</code>: Adds the specified file to the staging area for commit.</li>
+            <li><code>git commit -m "commit-message"</code>: Creates a new commit with the specified message.</li>
+            <li><code>git status</code>: Displays the status of the working directory and staging area.</li>
+        </ul>
+
+        <!-- Git Branches -->
+        <h2 id="git-branches">Git Branches</h2>
+        <p>Git branches are a powerful feature that allows developers to work on separate features or bug fixes simultaneously.</p>
+        <p>To create a new branch, use the following command:</p>
+        <pre><code>git branch branch-name</code></pre>
+        <p>To switch to a different branch, use:</p>
+        <pre><code>git checkout branch-name</code></pre>
+
+        <!-- Resolving Conflicts -->
+        <h2 id="resolving-conflicts">Resolving Conflicts</h2>
+        <p>Merge conflicts occur when Git cannot automatically merge two conflicting changes to the same line.</p>
+        <p>To resolve a conflict:</p>
+        <ol>
+            <li>Open the conflicting file in a text editor.</li>
+            <li>Locate the conflict markers (<code><<<<<<<</code>, <code>=======</code>, and <code>>>>>>>></code>).</li>
+            <li>Remove the conflict markers and replace them with the desired changes from each branch.</li>
+            <li>Save the file and stage the changes using the <code>git add</code> command.</li>
+        </ol>
+
+        <!-- Hosting a Repository -->
+        <h2 id="hosting-repository">Hosting a Repository</h2>
+        <p>To host a Git repository, consider using a popular hosting service like:</p>
+        <ul>
+            <li><a href="https://github.com/">GitHub</a></li>
+            <li><a href="https://gitlab.com/">GitLab</a></li>
+            <li><a href="https://bitbucket.org/">Bitbucket</a></li>
+        </ul>
+        <p>To create a new repository on GitHub, go to the <a href="https://github.com/">GitHub website</a> and click on "New repository."</p>
+        <p>To create a new repository on GitLab, go to the <a href="https://gitlab.com/">GitLab website</a> and sign in or sign up.</p>
+
+        <!-- Git Tips and Tricks -->
+        <h2 id="git-tips-and-tricks">Git Tips and Tricks</h2>
+        <p>Here are some useful tips and tricks for working with Git:</p>
+        <ul>
+            <li>Use a <code>.gitignore</code> file to exclude unnecessary files from version control.</li>
+            <li>Regularly pull changes from the remote repository to stay updated: <code>git pull origin branch-name</code>.</li>
+            <li>View detailed commit logs: <code>git log --oneline --graph --all</code>.</li>
+            <li>Undo local changes: <code>git restore file-name</code>.</li>
+        </ul>
+
+    </main>
+
+    
+</body>
+</html>
